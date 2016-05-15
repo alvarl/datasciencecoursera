@@ -12,7 +12,7 @@ sumEmissions$year <- as.character(sumEmissions$year)
 sumEmissions$location <- ifelse(sumEmissions$fips == "06037", "Los Angeles", "Baltimore")
 
 plot <- ggplot(sumEmissions) + geom_line(aes(x = year, y = Emissions, colour = location, group = location)) 
-plot + ggtitle("Total PM2.5 emissions\nfrom motor vehicle sources 1998-2008")
+plot + ggtitle("Total PM2.5 emissions\nfrom motor vehicle sources 1999-2008")
 
 ggsave("plot6.png", width = 6, height = 3)
 dev.off()

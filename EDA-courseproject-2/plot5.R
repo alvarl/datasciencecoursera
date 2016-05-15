@@ -11,7 +11,7 @@ sumEmissions <- aggregate(data = baltimoreMVRecords, Emissions ~ year, sum)
 sumEmissions$year <- as.character(sumEmissions$year)
 
 plot <- ggplot(sumEmissions, aes(x = year, y = Emissions, group = 1)) 
-plot + geom_line() + ggtitle("Total PM2.5 emissions in Baltimore \nfrom motor vehicle sources 1998-2008")
+plot + geom_line() + ggtitle("Total PM2.5 emissions in Baltimore \nfrom motor vehicle sources 1999-2008")
 ggsave("plot5.png", width = 6, height = 3)
 dev.off()
 
