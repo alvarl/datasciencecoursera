@@ -5,4 +5,4 @@
 .DS_Store
 */.RData
 */.DS_Store
-*/.Rproj
+*/*.Rproj
